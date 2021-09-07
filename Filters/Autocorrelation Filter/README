@@ -1,7 +1,14 @@
 The following method eliminates dataframe atributes based on a Pearson correlation (R) threshold which can be positive or negative.
-If positive the method eliminates atributes with correlations above said threshold. If negative the method eliminates atributes with correlations below the threshold.
+If positive the method eliminates atributes with correlations above said threshold. If negative the method eliminates atributes with correlations below the threshold (negative R score).
 Atributes must be in COLUMNS.
+
 Requires pandas library and numpy library as np.
+
+ELIMINATION CRITERIA:
+Correlations above the threshold are counted for each variable. If two attributes are highly correlated (above threshold) the code compares the number of correlations of each attribute and eliminates the one with the most correlations. This assumes that eliminating the atribute with the most correlations will decrease the number of correlations above threshold for most other variables.
+Once a variable has been erased the process is repeated until no correlations between attributes above the threshold remain.
+In the case two correlated attributes have the same total number of correlations above a threshold, the value of said correlations is summed for both. Then the attributte with the highest sum is eliminated. In the rare event that both have the same sum score, then the first attribute that appears the dataset is removed.
+A similar criteria is used in the case a negative threshold is set.
 
 Parameters description: 
      - df: base dataframe 
