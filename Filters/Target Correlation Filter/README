@@ -1,0 +1,12 @@
+The following method eliminates atributes from a dataset if the absolute value of the Pearson correlation (R) with target variable is below a certain threshold.
+Example: if threshold is set to 0.3, all atributes whose R correlation with target variable in the range (-0.3,0.3) will be erased. 
+
+Requires pandas library.
+
+Parameters description: 
+     - df: base dataframe 
+     - target: target dataframe to correlate with
+     - threshold: R threshold below which the method will filter atributes. Mustt be in range 0<=threshold<=1 
+     - inplace: Boolean. False will return processed dataframe, True will overwrite base dataframe
+     - show_correlations: shows the correlations with target for each variable
+     - show_erased_atributes: shows the erased atributes based on the NaN percentage threshold
