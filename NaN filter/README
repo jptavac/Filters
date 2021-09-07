@@ -1,0 +1,10 @@
+The following method eliminates atributes from a dataset if the percentage of NaN values surpasses a given threshold.
+The method requires pandas library.
+
+Parameters description:
+     - df: base dataframe 
+     - threshold: percentage threshold above which the method will filter atributes. Must be in range 0<=threshold<=100 
+     - axis: choose "1" for atributes in rows, "0" for atributes in columns
+     - inplace: Boolean. False will return processed dataframe, True will overwrite base dataframe
+     - show_percentages: shows the NaN percentages for each variable
+     - show_erased_atributes: shows the erased atributes based on the NaN percentage threshold
