@@ -1,0 +1,11 @@
+The following method eliminates dataframe atributes based on a Pearson correlation (R) threshold which can be positive or negative.
+If positive the method eliminates atributes with correlations above said threshold. If negative the method eliminates atributes with correlations below the threshold.
+Atributes must be in COLUMNS.
+Requires pandas library and numpy library as np.
+
+Parameters description: 
+     - df: base dataframe 
+     - threshold: R threshold above or below (depending on sign + or -) which the method will filter atributes. Mustt be in range -1<=threshold<=1 
+     - inplace: Boolean. False will return processed dataframe, True will overwrite base dataframe
+     - show_correlations: shows the correlation matrix
+     - show_erased_atributes: shows the erased atributes based on the NaN percentage threshold
