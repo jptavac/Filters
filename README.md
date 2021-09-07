@@ -1,4 +1,3 @@
-# Personal_methods
+# Filters
 
-Here I save some methods I develope for certain applications, for which I see potential use in the future. Most of these are codes for tasks I haven't found after searching the web. If any other code is used as base or inspiration it will be properly acknowledged. The codes may have varying room for improvement.
-Feel free to use any of these codes and contact me if you have any questions or suggestions.
+Here I save some filters to be aplied to datasets. I've developed these for certain applications, some a little more specific than others but you may find some other applications or use them as a base for your own codes. If any other code is used as base or inspiration it will be properly acknowledged. The codes may have varying room for improvement (some even suggested in the proper code). Feel free to use any of these and contact me if you have any questions or suggestions.
